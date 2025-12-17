@@ -128,3 +128,8 @@ Não esqueça de sempre fazer um pull para o repositório local depois do push. 
 
 ## PS: Nossa página do projeto (com download e visão geral) estará disponível com github pages e nosso blog está no medium.
 ## PS2: Protótipos podem ser feitos no site [InVIsion](https://projects.invisionapp.com) ou [MarvelApp](https://marvelapp.com).
+
+
+## Index
+
+- [scripts/](scripts/)
