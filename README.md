@@ -1,133 +1,130 @@
-# Workflow
+# Fluxo de Trabalho
 
-Nogo apps workflow documentation.
+Documentação do fluxo de trabalho da Nogo apps.
 
-## Overview
+## Visão Geral
 
-We use a method similar to kanban with consists in 3 standarts:
+Utilizamos um método similar ao Kanban, que consiste em 3 padrões:
 
-1. Comunication.
-2. Organization.
-3. Version control.
+1. Comunicação.
+2. Organização.
+3. Controle de Versão.
 
-# Slack(Comunication)
+# Slack (Comunicação)
 
-- brainstorm_10min: Weekly meeting with github projects, github issues and codacy in 10min.
- 1. Issues with label "stuck"
+- brainstorm_10min: Reunião semanal com projetos do github, issues do github e codacy em 10min.
+ 1. Issues com a etiqueta "stuck" (travado)
  2. Sprints
- 3. Next features
-- change_request: If you want ask for  a change in the project about something in progress.
-- general: general subjects.
-- github: Integration with github.
-- reviews_codacy: New reviews from codacy.
-- visitors_slaask: Chat room to visitors of our website.
+ 3. Próximas funcionalidades
+- change_request: Se você quiser solicitar uma mudança no projeto sobre algo em andamento.
+- general: Assuntos gerais.
+- github: Integração com o github.
+- reviews_codacy: Novas revisões do codacy.
+- visitors_slaask: Sala de bate-papo para visitantes do nosso site.
 
-# Github projects(Organization)
+# Projetos do Github (Organização)
 
-- Cards
- 1. You can use projects to create a workflow and organize the tasks and the team in notes.
- 2. Every task have to be possible done in more of 2 hours and less the 6 hours if not, split or paste some tasks in one task.
- 3. Can go just forward(pulled to next column) and all the columns can have just 6 tasks at once.
- 4. Every card title needs to have the current date.
- 5. We goal is min of 6 tasks weekly.
- 6. Every friday we clean the column done.
- 7. Every time i change a card of column to another column i have to change the date to the current.
+- Cartões (Cards)
+ 1. Você pode usar projetos para criar um fluxo de trabalho e organizar as tarefas e a equipe em notas.
+ 2. Cada tarefa deve ser possível de ser feita em mais de 2 horas e menos de 6 horas; caso contrário, divida ou junte algumas tarefas em uma só.
+ 3. Só pode ir para frente (puxado para a próxima coluna) e todas as colunas podem ter apenas 6 tarefas de uma vez.
+ 4. Todo título de cartão precisa ter a data atual.
+ 5. Nossa meta é o mínimo de 6 tarefas semanais.
+ 6. Toda sexta-feira limpamos a coluna "done" (feito).
+ 7. Toda vez que eu mudo um cartão de coluna para outra coluna, tenho que mudar a data para a atual.
 - Issues
- 1. Every note you create have to be convert in an issue when you put in the column "To do" and completed the data.
- 2. The issue data is assign(person responsible), milestone(stage of the project), label(type) and description.
- 3. Stuck label is some task is static more than 3 days in the same column or something was not approved in the review, what gets priority and the team discuss in slack. When you solve the issue stucked change label stuck to priority.
- 4. New, replace, bug and priority are the others types.
- 5. Every issue have to become a commit in your branch.
- 6. We can see in pulse and graphs informations about our issues and pulls.
- 7. When you make a review in an issue you can use the emoji "like" or "dislike"(this needs a comment) to symbolize what you think and can comment along the updates of the issue.
- 8. When we delete issues on friday from the column "done", we need to close them.
+ 1. Toda nota que você cria tem que ser convertida em uma issue quando você a coloca na coluna "To do" (A fazer) e completa os dados.
+ 2. Os dados da issue são: responsável (assign), marco (milestone - estágio do projeto), etiqueta (label - tipo) e descrição.
+ 3. A etiqueta "Stuck" é usada se alguma tarefa está estática por mais de 3 dias na mesma coluna ou algo não foi aprovado na revisão, o que ganha prioridade e a equipe discute no slack. Quando você resolver a issue travada, mude a etiqueta de "stuck" para "priority" (prioridade).
+ 4. Novo (new), substituir (replace), bug e prioridade (priority) são os outros tipos.
+ 5. Toda issue tem que se tornar um commit na sua branch.
+ 6. Podemos ver em "pulse" e nos gráficos informações sobre nossas issues e pulls.
+ 7. Quando você faz uma revisão em uma issue, você pode usar o emoji "like" ou "dislike" (este precisa de um comentário) para simbolizar o que você acha e pode comentar ao longo das atualizações da issue.
+ 8. Quando deletamos issues na sexta-feira da coluna "done", precisamos fechá-las.
 
-## Columns
+## Colunas
 
-- Backlog: Here we discussed our ideas, difficulties and plans. One times a week we make the brainstorm meeting.
-- To do: Here we have all the approved tasks(issues) to do with descriptions, labels, assigns and milestone.
-- Doing(testing): Here shows what is in progress.
-- Done: The task is finished and now can wait for review.
-- Review(testing): Here analyze the code when receive a pull request and make coments at lines, create a review and discuss about changes, request changes or approve with a like icon. When the review is complete close the issue and erase the issue of the column.
+- Backlog: Aqui discutimos nossas ideias, dificuldades e planos. Uma vez por semana fazemos a reunião de brainstorm.
+- To do: Aqui temos todas as tarefas (issues) aprovadas para fazer com descrições, etiquetas, responsáveis e marcos.
+- Doing (testing): Aqui mostra o que está em progresso.
+- Done: A tarefa está finalizada e agora pode esperar por revisão.
+- Review (testing): Aqui analisa-se o código ao receber um pull request e fazem-se comentários nas linhas, cria-se uma revisão e discute-se sobre mudanças, solicita-se mudanças ou aprova-se com um ícone de like. Quando a revisão estiver completa, feche a issue e apague a issue da coluna.
 
+# Controle de Versão
 
-# Version control
-
-Work in your branch and just when your work is done try a pull request, every pull request needs a description explain whats change and why.
+Trabalhe na sua branch e apenas quando seu trabalho estiver pronto tente um pull request, todo pull request precisa de uma descrição explicando o que mudou e por quê.
 
 Ex: 
 
-- What is changed?
+- O que mudou?
 
-Text example, text example, Text example, text example, Text example, text example, Text example, text example, Text example, text example.
+Exemplo de texto, exemplo de texto, Exemplo de texto, exemplo de texto, Exemplo de texto, exemplo de texto, Exemplo de texto, exemplo de texto, Exemplo de texto, exemplo de texto.
 
-- Why?
+- Por quê?
 
-Text example, text example, Text example, text example, Text example, text example, Text example, text example, Text example, text example.
+Exemplo de texto, exemplo de texto, Exemplo de texto, exemplo de texto, Exemplo de texto, exemplo de texto, Exemplo de texto, exemplo de texto, Exemplo de texto, exemplo de texto.
 
-## Code Review Checklist
+## Lista de Verificação de Revisão de Código
 
-The review needs to be done at 3 levels:
+A revisão precisa ser feita em 3 níveis:
 
-1. Receive a pull request.
-2. Codacy test.
-3. Build test and UI test.
-4. Comparation test with git or github.
-5. To approve(change to column done) or disapprove(add label "stuck").
+1. Receber um pull request.
+2. Teste do Codacy.
+3. Teste de Build e teste de UI.
+4. Teste de comparação com git ou github.
+5. Aprovar (mudar para a coluna done) ou desaprovar (adicionar etiqueta "stuck").
 
-More details:
+Mais detalhes:
 
-- Column "doing" and "review" need make these tests.
-- The person who make the review can't be the same who did the code.
+- Coluna "doing" e "review" precisam fazer esses testes.
+- A pessoa que faz a revisão não pode ser a mesma que fez o código.
 
-## General
+## Geral
 
-- The code works?
-- The code is clean?
-- The the code is encapsuled and OO?
-- The code respect design patterns, material design and android conventions?
-- There is something redundant or unnecessary?
-- The project is modulate with loose coupling?
-- All the methods and variables are commented or with explicit scope.
-- Some log or debug is unnecessary?
-- If the project needs some import in gradle, virtual machine and etc... the whole team needs be informed and create a documentation.
-- The code comented was removed?
-- The build works?
-- The UI is working in all devices that should?
-- The codacy see some problem in your code that needs to be fixed?
+- O código funciona?
+- O código está limpo?
+- O código está encapsulado e orientado a objetos?
+- O código respeita padrões de projeto, material design e convenções android?
+- Existe algo redundante ou desnecessário?
+- O projeto está modulado com baixo acoplamento?
+- Todos os métodos e variáveis estão comentados ou com escopo explícito.
+- Algum log ou debug é desnecessário?
+- Se o projeto precisa de alguma importação no gradle, máquina virtual e etc... toda a equipe precisa ser informada e criar uma documentação.
+- O código comentado foi removido?
+- A build funciona?
+- A UI está funcionando em todos os dispositivos que deveria?
+- O codacy vê algum problema no seu código que precisa ser consertado?
 
 ## Codacy
 
-The codacy make some automatic reviews and give us a better look in the code and Travis integration make the build online.
+O codacy faz algumas revisões automáticas e nos dá uma melhor visão no código e a integração com o Travis faz a build online.
 
 # Git
 
-You can to analyze in local git the diferences with the cheats below this topic and on github(priority) when create a pull request.
-Make the review on github is the best way to create a public review. You can make comments at lines of the code, only use git if you need an analyzes deeper.
-Don't forget make always a pull to local repository after the push. To you update the remote master before you update the local master.
+Você pode analisar no git local as diferenças com os truques abaixo deste tópico e no github (prioridade) quando criar um pull request.
+Fazer a revisão no github é a melhor maneira de criar uma revisão pública. Você pode fazer comentários nas linhas do código, só use o git se precisar de uma análise mais profunda.
+Não esqueça de sempre fazer um pull para o repositório local depois do push. Para você atualizar o master remoto antes de atualizar o master local.
 
-## Cheats to compare and logs
+## Truques para comparar e logs
 
-- git diff (show the changes)
+- git diff (mostra as mudanças)
 - git diff HEAD
-- git diff --word-diff(show just the changes and not the all line)
-- git diff --staged(show the changes in stage area)
-- git --stat(show just the files changed)
-- git checkout(change branchs)
-- git log(show commits from autors with dates)
-- git log --oneline(show just the descriptions of commits)
-- git log --stat(see the files that changes too)
+- git diff --word-diff (mostra apenas as mudanças e não a linha toda)
+- git diff --staged (mostra as mudanças na área de stage)
+- git --stat (mostra apenas os arquivos alterados)
+- git checkout (muda branches)
+- git log (mostra commits de autores com datas)
+- git log --oneline (mostra apenas as descrições dos commits)
+- git log --stat (vê os arquivos que mudaram também)
 
-## Possible mistakes
+## Possíveis erros
 
-1. If you have a repository inside your repository.
-2. If you don't have access to the key of the repository.
-3. If the remote repository have changes to pull.
-4. If you are try to push to master instead your branch.
+1. Se você tem um repositório dentro do seu repositório.
+2. Se você não tem acesso à chave do repositório.
+3. Se o repositório remoto tem mudanças para puxar (pull).
+4. Se você está tentando fazer push para o master ao invés da sua branch.
 
-## More git cheats:![alt tag](http://i.imgur.com/Ia1S7R8.png)
+## Mais truques de git:![alt tag](http://i.imgur.com/Ia1S7R8.png)
 
-## PS: Our project page(with download and overview) will be available with github pages and our blog is in medium.
-## PS2: Prototypes can be made on [InVIsion](https://projects.invisionapp.com) or [MarvelApp](https://marvelapp.com) site. 
-
-
+## PS: Nossa página do projeto (com download e visão geral) estará disponível com github pages e nosso blog está no medium.
+## PS2: Protótipos podem ser feitos no site [InVIsion](https://projects.invisionapp.com) ou [MarvelApp](https://marvelapp.com).
